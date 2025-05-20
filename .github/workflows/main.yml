@@ -23,6 +23,6 @@ jobs:
 
       - name: Run Notion Task Scheduler
         env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          DATABASE_ID: ${{ secrets.DATABASE_ID }}
+          NOTION: ${{ secrets.NOTION }}
+          DB_ID: ${{ secrets.DB_ID }}
         run: python schedule-tasks.py
