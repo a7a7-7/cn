@@ -42,8 +42,8 @@ weekly_schedule = {
 }
 
 # Notion API 연결
-notion = Client(auth=os.environ["NOTION_TOKEN"])
-database_id = os.environ["DATABASE_ID"]
+notion = Client(auth=os.environ["NOTION"])
+database_id = os.environ["DB_ID"]
 
 # 오늘 요일 확인
 weekday_kor = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
